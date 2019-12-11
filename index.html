@@ -5,25 +5,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:title" content="cv Oleksandr Tkachov">
+  <meta property="og:title" content="Oleksandr Tkachov portfolio">
   <meta property="og:locale" content="en_US">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Oleksandr Tkachov portfolio</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="iblock">
-      <div class="photo">
-        <img src="photo.jpg" alt="photo_cv">
+  <header>
+    <div class="container">
+      <div class="iblock">
+        <div class="photo">
+          <img src="./assets/photo.jpg" alt="photo_cv">
+        </div>
+        <div class="contact">
+          <h1>Oleksandr Tkachov</h1>
+          <p>
+            <strong>Github:</strong> <a href="https://github.com/certif" target="_blank">github.com/certif/</a><br>
+            <strong>LinkedIn profile:</strong> <a href="https://www.linkedin.com/in/tkachovoleksandr/"
+              target="_blank">linkedin.com/tkachovoleksandr/</a>
+          </p>
+        </div>
       </div>
-      <div class="contact">
-        <h1>Oleksandr Tkachov</h1>
-        <p><strong>Phone number:</strong><a href="tel:+380505555555"> +380505555555</a><br>
-          <strong>Email:</strong><a href="mailto:certifis@gmail.com"> certifis@gmail.com</a><br>
-          <strong>LinkedIn profile:</strong> <a href="https://www.linkedin.com/in/tkachovoleksandr/"
-            target="_blank">linkedin.com/tkachovoleksandr/</a></p>
+      <div class="divider"></div>
+  </header>
+  <main>
+
+    <section class="education">
+      <div class="education-container">
+        <div class="education-title-container">
+          <h2 class="education-title">Education</h2>
+          <span class="education-control"><i class="material-icons">
+              expand_more
+            </i></span>
+        </div>
+        <ul class="education-list hidden">
+          <li class="education-item">
+            <span class="education-item-text">- 2010 - 2014 completed the full course of Academician Yuriy Bugay
+              International
+              Scientific and Technical University having <strong>specialized</strong> in <strong>"Software
+                Engineering"</strong></span>
+          </li>
+          <li class="education-item">
+            <span class="education-item-text">- 2019Q3 RSSchool <strong>Javascript</strong> /
+              <strong>Frontend</strong></span>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="slider">
+        <button class="arrow arrow-prev" type="button">&lt;<span class="visually-hidden">Previous
+            slide</span></button>
+        <div class="project-wrapper">
+          <div class="project active">
+            <div class="project-container">
+              <form class="slider-form" action="#">
+                <input class="visually-hidden checkbox checkbox-repair" type="checkbox" name="checkbox-repair"
+                  id="checkbox-repair">
+                <label class="project-show project-show-repair" for="checkbox-repair">Show description</label>
+                <div class="project-desc project-desc-repair" id="project-desc-repair">
+                  <a class="project-title" href="./projects/repair-design-project/repair.html">Repair design project</a>
+                  <ul class="project-list">
+                    <li>HTML5/CSS3</li>
+                    <li>Responsive / adaptive</li>
+                    <li>Flexbox, Grid</li>
+                    <li>Adaptive images</li>
+                  </ul>
+                  <button class="project-tap">Tap to see the project &gt;</button>
+                </div>
+              </form>
+              <a href="./projects/repair-design-project/repair.html" class="project-link">
+                <img class="project-img" src="./assets/rdp.JPG" alt="repair-design-project">
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-container">
+              <form class="slider-form" action="#">
+                <input type="checkbox" class="visually-hidden checkbox checkbox-theyallow" name="checkbox-theyallow"
+                  id="checkbox-theyallow">
+                <label class="project-show project-show-theyallow" for="checkbox-theyallow">Show description</label>
+                <div class="project-desc project-desc-theyallow" id="project-desc-theyallow">
+                  <a class="project-title" href="./projects/theyalow/theyalow.html">Theyallow</a>
+                  <ul class="project-list">
+                    <li>HTML5/CSS3</li>
+                    <li>Responsive / adaptive</li>
+                    <li>Adaptive images</li>
+                    <li>Flexbox, Grid</li>
+                    <li>SASS/SCSS</li>
+                  </ul>
+                  <button class="project-tap">Tap to see the project &gt;</button>
+                </div>
+              </form>
+              <a href="./projects/theyalow/theyalow.html" class="project-link">
+                <img class="project-img" src="./assets/THEYALOW.jpg" alt="theyallow">
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="arrow arrow-next" type="button">&gt;<span class="visually-hidden">Next slide</span></button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
